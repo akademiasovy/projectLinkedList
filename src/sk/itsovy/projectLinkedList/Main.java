@@ -27,6 +27,7 @@ public class Main {
         linkedList.print();
 
         LinkedList linkedList2=new LinkedList();
+
         Node<Integer> m1=new Node<>(45);
         Node<Integer> m2=new Node<>(10);
         linkedList2.addToFront(m1);
@@ -34,4 +35,6 @@ public class Main {
         linkedList2.findByName("15");
         linkedList2.print();
     }
+
+
 }

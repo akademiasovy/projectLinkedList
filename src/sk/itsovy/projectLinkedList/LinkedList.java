@@ -3,6 +3,10 @@ package sk.itsovy.projectLinkedList;
 public class LinkedList {
     private Node head;
 
+    public Node getHead() {
+        return head;
+    }
+
     public LinkedList() {
         this.head = null;
     }
@@ -10,6 +14,11 @@ public class LinkedList {
     public void addToEnd(Node node){
         if(node==null)
             return;
+
+        if(head==null){
+            head=node;
+            return;
+        }
 
         Node tmp=head;
         while(tmp.getNext()!=null)
